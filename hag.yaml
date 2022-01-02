@@ -104,17 +104,6 @@ sensor:
       accuracy_decimals: 3
       filters:
         - lambda: return x * (1.0 / ${power_pulse_rate});
-  - platform: total_daily_energy
-    name: '${friendly_name} - Daily Energy'
-    id: sensor_total_daily_energy
-    power_id: sensor_energy_pulse_meter
-    unit_of_measurement: 'kWh'
-    state_class: total_increasing
-    device_class: energy
-    icon: mdi:flash-outline
-    accuracy_decimals: 3
-    filters:
-      - multiply: 0.001
   - platform: pulse_meter
     name: '${friendly_name} - Gas Consumption'
     id: sensor_gas_pulse_meter
