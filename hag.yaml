@@ -137,6 +137,3 @@ sensor:
       filters:
         - lambda: return x * (1.0 / ${gas_pulse_rate});
 
-time:
-  - platform: sntp
-    id: my_time
