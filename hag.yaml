@@ -99,6 +99,7 @@ sensor:
       id: sensor_total_energy
       state_class: total_increasing
       device_class: energy
+      icon: mdi:flash-outline
       unit_of_measurement: 'kWh'
       accuracy_decimals: 3
       filters:
@@ -110,6 +111,7 @@ sensor:
     unit_of_measurement: 'kWh'
     state_class: total_increasing
     device_class: energy
+    icon: mdi:flash-outline
     accuracy_decimals: 3
     filters:
       - multiply: 0.001
@@ -136,10 +138,11 @@ sensor:
     filters:
       - lambda: return x * (1.0 / ${gas_pulse_rate}) * 60;
     total:
-      name: '${friendly_name} - Total gas'
+      name: '${friendly_name} - Total Gas'
       id: sensor_total_gas
       state_class: total_increasing
       device_class: gas
+      icon: mdi:fire
       unit_of_measurement: 'm³'
       accuracy_decimals: 2
       filters:
