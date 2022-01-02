@@ -82,6 +82,7 @@ sensor:
     pin: ${power_pulse_pin}
     state_class: measurement
     device_class: power
+    icon: mdi:flash-outline
     unit_of_measurement: 'W'
     accuracy_decimals: 0
     on_value:
